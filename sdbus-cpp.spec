@@ -4,14 +4,13 @@
 
 Summary: High-level C++ D-Bus library
 Name: sdbus-cpp
-Version: 2.0.0
+Version: 2.1.0
 Release: 1
-Source0: https://github.com/Kistler-Group/sdbus-cpp/archive/%{name}-%{version}.tar.gz
+Source0: https://github.com/Kistler-Group/sdbus-cpp/archive/refs/tags/v%{version}.tar.gz
 URL: https://github.com/Kistler-Group/sdbus-cpp
 License: LGPL-2.1
 Group: System/Libraries
-BuildRequires: cmake
-BuildRequires: ninja
+BuildSystem: cmake
 BuildRequires: pkgconfig(libsystemd)
 
 %description
@@ -31,16 +30,6 @@ Requires: %{libname} = %{EVRD}
 
 %description -n %{devname}
 Development files (Headers etc.) for %{name}.
-
-%prep
-%autosetup -p1
-%cmake -G Ninja
-
-%build
-%ninja_build -C build
-
-%install
-%ninja_install -C build
 
 %files -n %{libname}
 %{_libdir}/*.so.%{major}*
