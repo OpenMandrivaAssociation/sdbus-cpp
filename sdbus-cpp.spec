@@ -13,6 +13,7 @@ License: LGPL-2.1
 Group: System/Libraries
 BuildSystem: cmake
 BuildRequires: pkgconfig(libsystemd)
+BuildRequires: pkgconfig(expat)
 BuildOption: -DSDBUSCPP_BUILD_CODEGEN=ON
 
 %description
