@@ -5,7 +5,7 @@
 
 Summary: High-level C++ D-Bus library
 Name: sdbus-cpp
-Version: 2.2.1
+Version: 2.3.1
 Release: 1
 Source0: https://github.com/Kistler-Group/sdbus-cpp/archive/refs/tags/v%{version}.tar.gz
 URL: https://github.com/Kistler-Group/sdbus-cpp
